@@ -1,5 +1,5 @@
  <div class="jumbotron center">
-  <h1> Bang my what!?</h1>
+  <h1> Bang my what!? </h1>
   <p> Welcome to www.bangmybhabhi.com, the harbinger of Bombay's sex culture revolution. </p>
 
   		<p> Tired of making tedious small talk with conservative Indians? Ever lament the absence of lasciviously hedonistic Bombay counterculture? Us too. So fuck the boring chatter of grannie-panty prudes. Fasten your seatbelts and sign the fuck up. </p>
@@ -7,11 +7,19 @@
   		<p> Its wild, we promise. </p>
 
 
+<% if user_signed_in? %>
+
+You're signed in bitch
+
+<% else %>
+
  	<div>
  		<%= link_to "Log in", new_user_session_path, class: "btn btn-danger btn-lg" %>
  		<%= link_to "Sign up", new_user_registration_path, class: "btn btn-warning btn-lg" %>
  	</div>
-  </p>
+<% end %>
+
+  
 </div>
- 
+
 
